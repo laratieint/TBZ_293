@@ -1,0 +1,285 @@
+.product-post__media--3d {
+    position: relative
+}
+
+.product-3d-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all .65s ease;
+    -o-transition: all .65s ease;
+    transition: all .65s ease;
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px)
+}
+
+.product-3d-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.product-3d-wrap img.hide-it {
+    
+	visibility:hidden!important;
+}
+
+.product-3d-wrap.animate img:first-child {
+    -webkit-animation-delay: 0;
+    animation-delay: 0
+}
+
+.product-3d-wrap.animate img:nth-child(2) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s
+}
+
+.product-3d-wrap.animate img:nth-child(3) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s
+}
+
+.product-3d-wrap.animate img:nth-child(4) {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s
+}
+
+.product-3d-wrap.animate img:nth-child(5) {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s
+}
+
+.product-3d-wrap.animate img:nth-child(6) {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s
+}
+
+.product-3d-wrap.animate img:nth-child(7) {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s
+}
+
+.product-3d-wrap.animate img:nth-child(8) {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s
+}
+
+.product-3d-wrap.animate img:nth-child(9) {
+    -webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s
+}
+
+.product-3d-wrap.animate img:nth-child(10) {
+    -webkit-animation-delay: 2.7s;
+    animation-delay: 2.7s
+}
+
+@-webkit-keyframes showcase {
+    0%,
+    49% {
+        opacity: 1
+    }
+    50%,
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes showcase {
+    0%,
+    49% {
+        opacity: 1
+    }
+    50%,
+    to {
+        opacity: 0
+    }
+}
+
+.page-loaded .product-3d-wrap {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+.range-slider-wrap {
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: all .65s ease;
+    -o-transition: all .65s ease;
+    transition: all .65s ease;
+    -webkit-transform: scale(0.8) translateY(50px);
+    -ms-transform: scale(0.8) translateY(50px);
+    transform: scale(0.8) translateY(50px)
+}
+
+.page-loaded .range-slider-wrap {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0px);
+    -ms-transform: scale(1) translateY(0px);
+    transform: scale(1) translateY(0px)
+}
+
+.range-slider {
+    opacity: 0
+}
+
+.special-track {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: .5
+}
+
+.rangeslider,
+.rangeslider__fill {
+    display: block;
+    border-radius: 10px
+}
+
+.rangeslider {
+    background: #f9f9f9;
+    background-color: transparent;
+    position: relative
+}
+
+.rangeslider--horizontal {
+    height: 20px;
+    width: 100%
+}
+
+.rangeslider--vertical {
+    width: 20px;
+    min-height: 150px;
+    max-height: 100%
+}
+
+.rangeslider--disabled {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4
+}
+
+.rangeslider__fill {
+    background-color: #f9f9f9;
+    background-color: transparent;
+    position: absolute
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+    top: 0;
+    height: 100%
+}
+
+.rangeslider--vertical .rangeslider__fill {
+    bottom: 0;
+    width: 100%
+}
+
+.rangeslider__handle {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.05);
+    -webkit-transition: background .3s ease;
+    -o-transition: background .3s ease;
+    transition: background .3s ease;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab
+}
+
+.rangeslider__handle:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.05)
+}
+
+.range-slider-wrap--pulse .rangeslider__handle {
+    -webkit-animation: pulse__handel 1.35s infinite;
+    animation: pulse__handel 1.35s infinite;
+    background-color: white;
+    top: -5px!important
+}
+
+@-webkit-keyframes pulse__handel {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1)
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0)
+    }
+    to {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+    }
+}
+
+@keyframes pulse__handel {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1)
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0)
+    }
+    to {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+    }
+}
+
+.rangeslider__handle:after {
+    content: "\f0dc";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 50%;
+    font-size: 13px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+    -ms-transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
+    color: rgba(0, 0, 0, 0.3);
+    -webkit-transition: color .25s ease;
+    -o-transition: color .25s ease;
+    transition: color .25s ease
+}
+
+.rangeslider__handle:hover:after {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.rangeslider--horizontal .rangeslider__handle {
+    top: -10px;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y
+}
+
+.rangeslider--vertical .rangeslider__handle {
+    left: -10px;
+    touch-action: pan-x;
+    -ms-touch-action: pan-x
+}
+
+input[type=range]:focus+.rangeslider .rangeslider__handle {
+    -moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+    -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+    box-shadow: 0 0 8px rgba(255, 0, 255, 0.9)
+}
