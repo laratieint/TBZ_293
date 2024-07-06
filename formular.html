@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triathlon Club Trigether</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="index.html"
+              ><img src="ressourcen/Logo.jpg" alt="Trigether Logo" class="Logo"
+            /></a>
+          </li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="mitglieder.html">MITGLIEDER</a></li>
+          <li><a href="wettkaempfe.html">WETTKÄMPFE</a></li>
+          <li><a href="trainings.html">TRAININGS</a></li>
+          <li><a href="resultate.html">RESULTATE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="vorname">Vorname</label>
+                    <input type="text" id="vorname" name="vorname">
+                </div>
+    
+                <div class="form-group">
+                    <label for="nachname">Nachname</label>
+                    <input type="text" id="nachname" name="nachname">
+                </div>
+    
+                <div class="form-group">
+                    <label for="geburtstagsdatum">Geburtstagsdatum</label>
+                    <input type="date" id="geburtstagsdatum" name="geburtstagsdatum">
+                </div>
+    
+                <div class="form-group">
+                    <label for="geschlecht">Geschlecht</label>
+                    <select id="geschlecht" name="geschlecht">
+                        <option value="männlich">Männlich</option>
+                        <option value="weiblich">Weiblich</option>
+                        <option value="divers">Divers</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse">
+                </div>
+    
+                <div class="form-group">
+                    <label for="telefonnummer">Telefonnummer</label>
+                    <input type="tel" id="telefonnummer" name="telefonnummer">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse</label>
+                    <input type="email" id="email" name="email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="sonstiges">Sonstiges</label>
+                    <input type="text" id="sonstiges" name="sonstiges">
+                </div>
+    
+                <button type="submit">Anmelden</button>
+            </form>
+        </div>
+    </main>
+  </body>
+</html>
